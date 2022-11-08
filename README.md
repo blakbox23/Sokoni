@@ -1,1 +1,1 @@
-The Groceries app built with Typescript and React!
+A Groceries app built with Typescript and React
