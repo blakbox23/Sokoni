@@ -1,11 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Routes, Route } from "react-router-dom"
+import { Container } from "react-bootstrap"
+import { Home } from "./pages/Home"
+import { Market } from "./pages/Market"
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <h1>Hi</h1>
+    <Container className="mb-4">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/market" element={<Market />} />
+        </Routes>
+      </Container>
   )
 }
 
