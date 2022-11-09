@@ -1,0 +1,26 @@
+[
+    {
+      "id": 1,
+      "name": "Avocados",
+      "price": 10.99,
+      "imgUrl": "/imgs/avocados.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Greens",
+      "price": 1199,
+      "imgUrl": "/imgs/greens.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Banana",
+      "price": 1.05,
+      "imgUrl": "/imgs/banana.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Vegis",
+      "price": 14000,
+      "imgUrl": "/imgs/mixgroceries.jpg"
+    }
+  ]

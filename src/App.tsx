@@ -1,12 +1,22 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import { Routes, Route } from "react-router-dom";
+import { Container } from "react-bootstrap";
+import { Home } from "./pages/Home";
+import { Market } from "./pages/Market";
+import { Navbar } from "./components/Navbar";
+import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <h1>Hi</h1>
-  )
+    <ShoppingCartProvider>
+      <Container className="mb-4">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/market" element={<Market />} />
+        </Routes>
+      </Container>
+    </ShoppingCartProvider>
+  );
 }
 
-export default App
+export default App;
