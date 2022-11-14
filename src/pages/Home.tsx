@@ -76,7 +76,7 @@ export function Home() {
 
         {/* cards */}
         <div className="mt-3 text-center">
-          <Row>
+          <Row xs={1} sm={2} md={3} className="g-3">
             <Col>
               <Card>
                 <Card.Body>
