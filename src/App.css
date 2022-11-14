@@ -1,0 +1,9 @@
+@media only screen and (max-width: 600px) {
+    .hero-text{
+        width: 170% !important;
+    }
+    .hero-img{
+        background-position: 42%;
+    }
+    
+} 

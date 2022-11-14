@@ -1,24 +1,27 @@
 import { Badge, Button, Card, Col, Row } from "react-bootstrap";
 import { Footer } from "../components/Footer";
 import { colors } from "../constants/colors";
+import '../App.css'
+
 export function Home() {
   return (
     <div style={{ fontFamily: "Quicksand, sans-serif" }}>
       <div
-        className="d-flex"
+        className="d-flex hero"
         style={{
           backgroundColor: colors.PRIMARY,
           height: "55vh",
         }}
       >
-        <div style={{ width: "50%" }}>
-          <img
-            style={{ width: "100%", objectFit: "cover" }}
+        <div className="d-flex justify-content-center align-items-center w-50 h-100 hero-img" style={{backgroundImage: "url(../public/imgs/groceryhero1-removebg-preview.png)", backgroundRepeat:"no-repeat"}}>
+          {/* <img 
+            style={{ width: "50%", objectFit: "cover", }}
             src="../public/imgs/grocerybag.jpg"
-          />
+          /> */}
         </div>
+
         <div
-          className="d-flex flex-column justify-content-around text-center p-3"
+          className="d-flex flex-column justify-content-around text-center p-3 hero-text"
           style={{ width: "50%" }}
         >
           <h1 className="fs-2 mt-3" style={{ fontWeight: "600" }}>
@@ -37,7 +40,7 @@ export function Home() {
         }}
       >
         <Row className="gap-3 mb-3">
-          <Col className="p-2" style={{ backgroundColor: colors.PRIMARY }}>
+          <Col className="p-2" style={{ backgroundColor: colors.PRIMARY, backgroundImage:"url(../imgs/person-removebg-preview.png)", backgroundRepeat:"no-repeat", backgroundSize: "50%", backgroundPosition:"right"}}>
             <div className="w-50">
               <Badge pill bg="warning" text="light">
                 Free delivery
@@ -46,13 +49,14 @@ export function Home() {
               <p style={{ fontWeight: 300, fontSize: ".9rem" }}>
                 Shop 5000 worth of produce and get free delivery anywhere
               </p>
-              <Button className="mt-2 mb-2" variant="secondary">
+              <Button className="mt-4 mb-4" variant="secondary">
                 Shop now
               </Button>{" "}
             </div>
           </Col>
 
-          <Col className="p-2" style={{ backgroundColor: "#DFE5EC" }}>
+          
+          <Col className="p-2" style={{ backgroundColor: "#DFE5EC",backgroundImage:"url(../imgs/basket-removebg-preview.png)", backgroundRepeat:"no-repeat", backgroundSize: "50% 120%", backgroundPosition:"right" }}>
             <div className="w-50">
               <Badge pill bg="warning" text="light">
                 20% off
@@ -61,7 +65,7 @@ export function Home() {
               <p style={{ fontWeight: 300, fontSize: ".9rem" }}>
                 Shop 5000 worth of produce and get free delivery anywhere
               </p>
-              <Button className="mt-2 mb-2" variant="secondary">
+              <Button className="mt-4 mb-4" variant="secondary">
                 Shop now
               </Button>{" "}
             </div>
@@ -74,13 +78,13 @@ export function Home() {
             <Col>
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                  <Card.Title className="mt-3 mb-3 fw-bold">Become a partner</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
                   <Button className="mt-2 mb-2" variant="secondary">
-                    Shop now
+                    Join us
                   </Button>{" "}
                 </Card.Body>
               </Card>
@@ -90,13 +94,13 @@ export function Home() {
               {" "}
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                <Card.Title className="mt-3 mb-3 fw-bold">Delivery services</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
                   <Button className="mt-2 mb-2" variant="secondary">
-                    Shop now
+                    Join us
                   </Button>{" "}
                 </Card.Body>
               </Card>
@@ -105,13 +109,13 @@ export function Home() {
             <Col>
               <Card>
                 <Card.Body>
-                  <Card.Title>Card Title</Card.Title>
+                <Card.Title className="mt-3 mb-3 fw-bold">Our careers</Card.Title>
                   <Card.Text>
                     Some quick example text to build on the card title and make
                     up the bulk of the card's content.
                   </Card.Text>
                   <Button className="mt-2 mb-2" variant="secondary">
-                    Shop now
+                    Join us
                   </Button>{" "}
                 </Card.Body>
               </Card>
