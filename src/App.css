@@ -5,5 +5,21 @@
     .hero-img{
         background-position: 42%;
     }
+
+    .cta-row{
+        display: block !important;
+    }
+
+    .cta-col{
+        background-image: none !important;
+        margin-bottom: 1rem;
+
+    }
+
+    .cta-div {
+        width: 100% !important;
+    }
+
+ 
     
 } 

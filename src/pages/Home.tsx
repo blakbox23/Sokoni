@@ -39,9 +39,9 @@ export function Home() {
           padding: "3rem",
         }}
       >
-        <Row className="gap-3 mb-3">
-          <Col className="p-2" style={{ backgroundColor: colors.PRIMARY, backgroundImage:"url(../imgs/person-removebg-preview.png)", backgroundRepeat:"no-repeat", backgroundSize: "50%", backgroundPosition:"right"}}>
-            <div className="w-50">
+        <Row className="gap-3 mb-3 cta-row">
+          <Col className="p-2 cta-col" style={{ backgroundColor: colors.PRIMARY, backgroundImage:"url(../imgs/person-removebg-preview.png)", backgroundRepeat:"no-repeat", backgroundSize: "50%", backgroundPosition:"right"}}>
+            <div className="cta-div" style={{width: "50%"}}>
               <Badge pill bg="warning" text="light">
                 Free delivery
               </Badge>{" "}
@@ -56,8 +56,8 @@ export function Home() {
           </Col>
 
           
-          <Col className="p-2" style={{ backgroundColor: "#DFE5EC",backgroundImage:"url(../imgs/basket-removebg-preview.png)", backgroundRepeat:"no-repeat", backgroundSize: "50% 120%", backgroundPosition:"right" }}>
-            <div className="w-50">
+          <Col className="p-2 cta-col" style={{ backgroundColor: "#DFE5EC",backgroundImage:"url(../imgs/basket-removebg-preview.png)", backgroundRepeat:"no-repeat", backgroundSize: "50%", backgroundPosition:"right" }}>
+          <div className="cta-div" style={{width: "50%"}}>
               <Badge pill bg="warning" text="light">
                 20% off
               </Badge>{" "}
@@ -72,8 +72,10 @@ export function Home() {
           </Col>
         </Row>
 
+        <p className="fw-bold text-center mt-5 mb-5" >Let's do it together</p>
+
         {/* cards */}
-        <div className="mt-5 text-center">
+        <div className="mt-3 text-center">
           <Row>
             <Col>
               <Card>
