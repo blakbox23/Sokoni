@@ -8,13 +8,14 @@ export function Market() {
     <div 
       style={{
         backgroundColor: colors.PRIMARY,
-        height: "100vh",
-        fontFamily: "Quicksand, sans-serif"
+        // height: "100vh",
+        fontFamily: "Quicksand, sans-serif",
+        paddingBottom: "3rem"
       }}
     >
       <div className="d-flex align-items-center"
         style={{
-          height: "18%",
+          height: "10rem",
           backgroundImage: "url(../public/imgs/mktbanner2.jpg)",
           objectFit: "cover",
           backgroundPosition: "right",
@@ -24,7 +25,7 @@ export function Market() {
       ><p className="ms-5 text-white fs-3">Our Products</p></div>
 
 
-      <Row xs={1} sm={2} md={3} lg={4} className="g-3 p-4">
+      <Row xs={1} sm={2} md={3} lg={4} className="g-3 ps-5 pe-5">
         {storeItems.map((item) => (
           <Col key={item.id}>
             <StoreItem {...item} />

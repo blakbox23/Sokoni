@@ -6,9 +6,10 @@ type StoreItemProps = {
   name: string;
   price: number;
   imgUrl: string;
+  productQuant: string;
 };
 
-export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
+export function StoreItem({ id, name, price, imgUrl, productQuant }: StoreItemProps) {
    
     const {
         getItemQuantity,
@@ -28,13 +29,16 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
         style={{ objectFit: "cover" }}
       />
       <Card.Body className="d-flex flex-column">
-        <Card.Text className="d-flex justify-content-between align-items-baseline mb-4">
+        <Card.Text className="mb-4">
+          <div className="d-flex justify-content-between align-items-baseline">
           <span className="fs-5">{name}</span>
-          <span className="ms-2 text-muted">{price}</span>
+          <span className="ms-2 text-muted">{productQuant}</span>
+          </div>
+          <div>{price}</div>
         </Card.Text>
         <div className="mt-auto">
           {quantity === 0 ? (
-            <Button className="w-100" onClick={() => increaseCartQuantity(id)}>+ Add To Cart</Button>
+            <Button style={{backgroundColor: "#288169", border: "none"}} className="w-100" onClick={() => increaseCartQuantity(id)}>Add To Cart</Button>
           ) : (
             <div
               className="d-flex align-items-center flex-column"
@@ -44,11 +48,11 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
                 className="d-flex align-items-center justify-content-center"
                 style={{ gap: ".5rem" }}
               >
-                <Button onClick={() => decreaseCartQuantity(id)}>-</Button>
+                <Button style={{backgroundColor: "#288169", border: "none"}} onClick={() => decreaseCartQuantity(id)}>-</Button>
                 <div>
-                  <span className="fs-3">{quantity}</span> in cart
+                  <span className="fs-5 fw-bold text-muted">{quantity}</span> in cart
                 </div>
-                <Button onClick={() => increaseCartQuantity(id)}>+</Button>
+                <Button style={{backgroundColor: "#00563E", border: "none"}} onClick={() => increaseCartQuantity(id)}>+</Button>
               </div>
               <Button onClick={() => removeFromCart(id)} variant="danger" size="sm">
                 Remove

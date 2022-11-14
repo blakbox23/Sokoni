@@ -3,24 +3,55 @@
       "id": 1,
       "name": "Avocados",
       "price": 10.99,
-      "imgUrl": "/imgs/avocados.jpg"
+      "imgUrl": "/imgs/avocados.png",
+      "productQuant": "1 Kg"
     },
     {
       "id": 2,
-      "name": "Greens",
+      "name": "Pineaple",
       "price": 1199,
-      "imgUrl": "/imgs/greens.jpg"
+      "imgUrl": "/imgs/pineaples.png",
+      "productQuant": "5 pcs"
+
     },
     {
       "id": 3,
       "name": "Banana",
       "price": 1.05,
-      "imgUrl": "/imgs/banana.jpg"
+      "imgUrl": "/imgs/bananas.png",
+      "productQuant": "5 bunches"
+
     },
     {
       "id": 4,
-      "name": "Vegis",
+      "name": "Sweet potatoes",
       "price": 14000,
-      "imgUrl": "/imgs/mixgroceries.jpg"
+      "imgUrl": "/imgs/potatoes.png",
+      "productQuant": "1 Kg"
+
+    },
+    {
+      "id": 5,
+      "name": "Pineaple",
+      "price": 1199,
+      "imgUrl": "/imgs/pineaples.png",
+      "productQuant": "5 pcs"
+
+    },
+    {
+      "id": 6,
+      "name": "Banana",
+      "price": 1.05,
+      "imgUrl": "/imgs/bananas.png",
+      "productQuant": "5 bunches"
+
+    },
+    {
+      "id": 7,
+      "name": "Sweet potatoes",
+      "price": 14000,
+      "imgUrl": "/imgs/potatoes.png",
+      "productQuant": "1 Kg"
+
     }
   ]
