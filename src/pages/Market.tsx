@@ -7,35 +7,37 @@ import { Footer } from "../components/Footer";
 export function Market() {
   return (
     <>
-    <div 
-      style={{
-        backgroundColor: colors.PRIMARY,
-        // height: "100vh",
-        fontFamily: "Quicksand, sans-serif",
-        paddingBottom: "3rem"
-      }}
-    >
-      <div className="d-flex align-items-center"
+      <div
         style={{
-          height: "10rem",
-          backgroundImage: "url(../public/imgs/mktbanner2.jpg)",
-          objectFit: "cover",
-          backgroundPosition: "right",
-          width: "100%",
-          marginBottom: "3rem"
+          backgroundColor: colors.PRIMARY,
+          // height: "100vh",
+          fontFamily: "Quicksand, sans-serif",
+          paddingBottom: "3rem",
         }}
-      ><p className="ms-5 text-white fs-3">Our Products</p></div>
+      >
+        <div
+          className="d-flex align-items-center"
+          style={{
+            height: "10rem",
+            backgroundImage: "url(../public/imgs/mktbanner2.jpg)",
+            objectFit: "cover",
+            backgroundPosition: "right",
+            width: "100%",
+            marginBottom: "3rem",
+          }}
+        >
+          <p className="ms-5 text-white fs-3">Our Products</p>
+        </div>
 
-
-      <Row xs={1} sm={2} md={3} lg={4} className="g-3 ps-5 pe-5">
-        {storeItems.map((item) => (
-          <Col key={item.id}>
-            <StoreItem {...item} />
-          </Col>
-        ))}
-      </Row>
-    </div>
+        <Row xs={1} sm={2} md={3} lg={4} className="g-3 ps-5 pe-5">
+          {storeItems.map((item) => (
+            <Col key={item.id}>
+              <StoreItem {...item} />
+            </Col>
+          ))}
+        </Row>
+      </div>
       <Footer />
-      </>
+    </>
   );
 }
