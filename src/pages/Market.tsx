@@ -2,9 +2,11 @@ import { Col, Row } from "react-bootstrap";
 import { StoreItem } from "../components/StoreItem";
 import storeItems from "../data/items.json";
 import { colors } from "../constants/colors";
+import { Footer } from "../components/Footer";
 
 export function Market() {
   return (
+    <>
     <div 
       style={{
         backgroundColor: colors.PRIMARY,
@@ -33,5 +35,7 @@ export function Market() {
         ))}
       </Row>
     </div>
+      <Footer />
+      </>
   );
 }
