@@ -2,6 +2,7 @@ import { Badge, Button, Card, Col, Row } from "react-bootstrap";
 import { Footer } from "../components/Footer";
 import { colors } from "../constants/colors";
 import '../App.css'
+import MobileNav from "../components/MobileNav";
 
 export function Home() {
   return (

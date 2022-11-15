@@ -20,6 +20,11 @@
         width: 100% !important;
     }
 
+    .togle {
+        box-shadow: none !important;
+        border: none !important;
+    }
+
  
     
 } 
