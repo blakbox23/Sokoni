@@ -7,9 +7,10 @@ type StoreItemProps = {
   price: number;
   imgUrl: string;
   productQuant: string;
+  category?: string;
 };
 
-export function StoreItem({ id, name, price, imgUrl, productQuant }: StoreItemProps) {
+export function StoreItem({ id, name, price, imgUrl, productQuant, category }: StoreItemProps) {
    
     const {
         getItemQuantity,
@@ -29,13 +30,13 @@ export function StoreItem({ id, name, price, imgUrl, productQuant }: StoreItemPr
         style={{ objectFit: "cover" }}
       />
       <Card.Body className="d-flex flex-column">
-        <Card.Text className="mb-4">
+        <div className="mb-4">
           <div className="d-flex justify-content-between align-items-baseline">
           <span className="fs-5">{name}</span>
           <span className="ms-2 text-muted">{productQuant}</span>
           </div>
           <div>{price}</div>
-        </Card.Text>
+        </div>
         <div className="mt-auto">
           {quantity === 0 ? (
             <Button style={{backgroundColor: "#288169", border: "none"}} className="w-100" onClick={() => increaseCartQuantity(id)}>Add To Cart</Button>

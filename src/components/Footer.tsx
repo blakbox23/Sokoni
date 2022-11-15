@@ -41,7 +41,7 @@ export function Footer() {
         className="d-flex justify-content-center align-items-center text-white bg-dark"
         style={{ height: "3rem", fontSize: ".9rem", fontWeight: "300" }}
       >
-        <div>All rights reserved 2022</div>
+        {/* <div>All rights reserved 2022</div> */}
       </div>
     </>
   );
