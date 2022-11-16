@@ -15,6 +15,12 @@ export function Market() {
     setSelected(category);
   };
 
+  const unfiltered = () =>{
+     setSelected("Select a category")
+     setProducts(storeItems)
+
+    }
+
   return (
     <>
       <div
@@ -47,11 +53,12 @@ export function Market() {
           <Dropdown.Toggle split variant="secondary" id="dropdown-split-basic" />
 
           <Dropdown.Menu>
+            <Dropdown.Item onClick={() => unfiltered()}>All</Dropdown.Item>
             <Dropdown.Item onClick={() => filterItem("Vegetables")}>Vegetables</Dropdown.Item>
             <Dropdown.Item onClick={() => filterItem("Dairy")}>Dairy</Dropdown.Item>
             <Dropdown.Item onClick={() => filterItem("Fruits")}>Fruits</Dropdown.Item>
 
-            <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+            {/* <Dropdown.Item href="#/action-3">Something else</Dropdown.Item> */}
           </Dropdown.Menu>
         </Dropdown>
 
