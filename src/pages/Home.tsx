@@ -6,6 +6,8 @@ import MobileNav from "../components/MobileNav";
 
 export function Home() {
   return (
+    <>
+    <MobileNav />
     <div style={{ fontFamily: "Quicksand, sans-serif" }}>
       <div
         className="d-flex hero"
@@ -15,10 +17,7 @@ export function Home() {
         }}
       >
         <div className="d-flex justify-content-center align-items-center w-50 h-100 hero-img" style={{backgroundImage: "url(../public/imgs/groceryhero1-removebg-preview.png)", backgroundRepeat:"no-repeat"}}>
-          {/* <img 
-            style={{ width: "50%", objectFit: "cover", }}
-            src="../public/imgs/grocerybag.jpg"
-          /> */}
+       
         </div>
 
         <div
@@ -128,5 +127,6 @@ export function Home() {
       </div>
       <Footer />
     </div>
+    </>
   );
 }

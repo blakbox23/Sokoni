@@ -4,15 +4,19 @@ import { Market } from "./pages/Market";
 import { Navbar } from "./components/Navbar";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 import MobileNav from "./components/MobileNav";
+import { Login } from "./pages/Login";
+import { Signup } from "./components/Signup";
 
 function App() {
   return (
     <ShoppingCartProvider>
         {/* <Navbar /> */}
-        <MobileNav />
+        {/* <MobileNav /> */}
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/market" element={<Market />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/sign-up" element={<Signup />} />
         </Routes>
     </ShoppingCartProvider>
   );

@@ -49,7 +49,7 @@ function MobileNav() {
                       Contact us
                     </Nav.Link>
 
-                    <Nav.Link className={"d-md-none d-sm-none"} to="/market" as={NavLink}>
+                    <Nav.Link className={"d-md-none d-sm-none"} to="/login" as={NavLink}>
                       Login
                     </Nav.Link>
 
@@ -62,7 +62,7 @@ function MobileNav() {
             <NavLink
               className={"d-none d-sm-block p-2"}
               style={{ marginRight: "1rem", textDecoration: "none", fontFamily: "Quicksand, sans-serif" }}
-              to="/market"
+              to="/login"
             >
               Login
             </NavLink>

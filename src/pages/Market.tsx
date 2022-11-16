@@ -4,6 +4,7 @@ import storeItems from "../data/items.json";
 import { colors } from "../constants/colors";
 import { Footer } from "../components/Footer";
 import { useState } from "react";
+import MobileNav from "../components/MobileNav";
 
 export function Market() {
   const [products, setProducts] = useState(storeItems);
@@ -23,6 +24,7 @@ export function Market() {
 
   return (
     <>
+    <MobileNav />
       <div
         style={{
           backgroundColor: colors.PRIMARY,
