@@ -5,7 +5,7 @@ import { Navbar } from "./components/Navbar";
 import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 import MobileNav from "./components/MobileNav";
 import { Login } from "./pages/Login";
-import { Signup } from "./components/Signup";
+import { Signup } from "./pages/Signup"
 import { Checkout } from "./pages/Checkout";
 
 function App() {
