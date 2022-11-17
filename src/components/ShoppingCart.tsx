@@ -4,6 +4,7 @@ import storeItems from "../data/items.json";
 import { CartItem } from "./CartItem";
 import { NavLink } from "react-router-dom";
 import { Checkout } from "../pages/Checkout";
+import { formatCurrency } from "../utilities/formatCurrency";
 
 type ShoppingCartProps = {
   isOpen: boolean;
@@ -23,10 +24,12 @@ export function ShoppingCart({ isOpen }: ShoppingCartProps) {
           ))}
           <div className="ms-auto fw-bold fs-5 mb-3">
             Total{" "}
-            {cartItems.reduce((total, cartItem) => {
-              const item = storeItems.find((i) => i.id === cartItem.id);
-              return total + (item?.price || 0) * cartItem.quantity;
-            }, 0)}
+            {formatCurrency(
+              cartItems.reduce((total, cartItem) => {
+                const item = storeItems.find(i => i.id === cartItem.id)
+                return total + (item?.price || 0) * cartItem.quantity
+              }, 0)
+            )}
           </div>
         </Stack>
         <div>

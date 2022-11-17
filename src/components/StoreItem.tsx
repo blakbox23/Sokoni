@@ -35,7 +35,7 @@ export function StoreItem({ id, name, price, imgUrl, productQuant, category }: S
           <span className="fs-5">{name}</span>
           <span className="ms-2 text-muted">{productQuant}</span>
           </div>
-          <div>{price}</div>
+          <div style={{fontSize: ".95rem", fontWeight:"bold", color:"green"}}>KSH {price}</div>
         </div>
         <div className="mt-auto">
           {quantity === 0 ? (
