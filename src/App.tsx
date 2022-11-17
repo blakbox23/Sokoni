@@ -6,6 +6,7 @@ import { ShoppingCartProvider } from "./context/ShoppingCartContext";
 import MobileNav from "./components/MobileNav";
 import { Login } from "./pages/Login";
 import { Signup } from "./components/Signup";
+import { Checkout } from "./pages/Checkout";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/market" element={<Market />} />
           <Route path="/login" element={<Login />} />
           <Route path="/sign-up" element={<Signup />} />
+          <Route path="/checkout" element={<Checkout />} />
         </Routes>
     </ShoppingCartProvider>
   );

@@ -1,6 +1,7 @@
 import { Button, Stack } from "react-bootstrap"
 import { useShoppingCart } from "../context/ShoppingCartContext"
 import storeItems from "../data/items.json"
+import 'bootstrap-icons/font/bootstrap-icons.css';
 
 type CartItemProps = {
     id: number
@@ -37,8 +38,11 @@ return (
         size="sm"
         onClick={() => removeFromCart(item.id)}
       >
-        &times;
+         <i className="bi bi-trash h-100"></i>
+        
       </Button>
+    
+      
     </Stack>
   )
 }
