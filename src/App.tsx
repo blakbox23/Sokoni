@@ -15,6 +15,7 @@ function App() {
     <ShoppingCartProvider>
         {/* <Navbar /> */}
         {/* <MobileNav /> */}
+        <div style={{width: "99%", boxSizing: "border-box"}}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/market" element={<Market />} />
@@ -24,6 +25,7 @@ function App() {
           <Route path="/about-us" element={<About />} />
           <Route path="/contact-us" element={<Contact />} />
         </Routes>
+        </div>
     </ShoppingCartProvider>
   );
 }
