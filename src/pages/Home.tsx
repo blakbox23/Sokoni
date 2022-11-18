@@ -16,7 +16,7 @@ export function Home() {
           height: "55vh",
         }}
       >
-        <div className="d-flex justify-content-center align-items-center w-50 h-100 hero-img" style={{backgroundImage: "url(../public/imgs/groceryhero1-removebg-preview.png)", backgroundRepeat:"no-repeat"}}>
+        <div className="d-flex justify-content-center align-items-center w-50 h-100 hero-img home-banner">
        
         </div>
 
@@ -29,9 +29,9 @@ export function Home() {
           </h1>
           <p>From farm to shop hassle free</p>
           {/* <p className="border w-100 align-self-center">some form</p> */}
-          <Button className="mt-4 mb-4 w-50  mx-auto fw-bold" variant="outline-secondary" href="market">
+          {/* <Button className="mt-4 mb-4 w-50  mx-auto fw-bold" variant="outline-secondary">
                 Shop now
-              </Button>{" "}
+            </Button>{" "} */}
         </div>
       </div>
 

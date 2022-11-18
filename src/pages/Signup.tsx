@@ -13,14 +13,8 @@ export function Signup() {
       }}
     >
       <div
-        className="w-50 border h-100 d-none d-sm-flex "
-        style={{
-          backgroundColor: "#87e387",
-          backgroundImage: "url(../public/imgs/logins-removebg-preview.png)",
-          backgroundSize: "70%",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-        }}
+        className="w-50 border h-100 d-none d-sm-flex login-banner"
+     
       ></div>
 
 <div className="d-flex p-4 border flex-column justify-content-center align-items-center mobile">

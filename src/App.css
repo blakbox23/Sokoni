@@ -25,13 +25,28 @@
   }
 
 }
+
 .market-banner {
-    height: "10rem",
-    backgroundImage: "url(../public/imgs/mktbanner2.jpg)",
-    objectFit: "cover",
-    backgroundPosition: "right",
-    width: "100%",
-    marginBottom: "2rem",
+    height: 10rem;
+    background-image: url('../public/imgs/mktbanner2.jpg');
+    object-fit: cover;
+    background-position: right;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.home-banner {
+  background-image: url('../public/imgs/groceryhero1-removebg-preview.png');
+   background-repeat:no-repeat;
+}
+
+.login-banner {
+ 
+    background-color: #87e387;
+    background-image: url('../public/imgs/logins-removebg-preview.png');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
 
 }
 
