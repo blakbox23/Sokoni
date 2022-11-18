@@ -66,7 +66,7 @@ export function Home() {
               <p style={{ fontWeight: 300, fontSize: ".9rem" }}>
                 Shop 5000 worth of produce and get free delivery anywhere
               </p>
-              <Button className="mt-4 mb-4" variant="secondary" href="market">
+              <Button className="mt-4 mb-4" variant="secondary" href="/market">
                 Learn more
               </Button>{" "}
             </div>
