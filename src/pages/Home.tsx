@@ -3,6 +3,7 @@ import { Footer } from "../components/Footer";
 import { colors } from "../constants/colors";
 import '../App.css'
 import MobileNav from "../components/MobileNav";
+import { NavLink } from "react-router-dom";
 
 export function Home() {
   return (
@@ -66,9 +67,10 @@ export function Home() {
               <p style={{ fontWeight: 300, fontSize: ".9rem" }}>
                 Shop 5000 worth of produce and get free delivery anywhere
               </p>
-              <Button className="mt-4 mb-4" variant="secondary" href="/market">
+              <NavLink to="/market" ><Button className="mt-4 mb-4" variant="secondary">
                 Learn more
               </Button>{" "}
+              </NavLink>
             </div>
           </Col>
         </Row>
