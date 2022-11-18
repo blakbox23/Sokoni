@@ -2,7 +2,7 @@
     {
       "id": 1,
       "name": "Avocados",
-      "price": 10.99,
+      "price": 1000,
       "imgUrl": "/imgs/avocados.png",
       "productQuant": "1 Kg",
       "category": "Fruits"
@@ -10,7 +10,7 @@
     {
       "id": 2,
       "name": "Pineaple",
-      "price": 1199,
+      "price": 200,
       "imgUrl": "/imgs/pineaples.png",
       "productQuant": "5 pcs",
       "category": "Fruits"
@@ -19,7 +19,7 @@
     {
       "id": 3,
       "name": "Banana",
-      "price": 1.05,
+      "price": 50,
       "imgUrl": "/imgs/bananas.png",
       "productQuant": "5 bunches",
       "category": "Fruits"
@@ -28,7 +28,7 @@
     {
       "id": 4,
       "name": "Sweet potatoes",
-      "price": 14000,
+      "price": 100,
       "imgUrl": "/imgs/potatoes.png",
       "productQuant": "1 Kg",
       "category": "Vegetables"
@@ -37,7 +37,7 @@
     {
       "id": 5,
       "name": "Pineaple",
-      "price": 1199,
+      "price": 99,
       "imgUrl": "/imgs/pineaples.png",
       "productQuant": "5 pcs",
       "category": "Dairy"
@@ -46,7 +46,7 @@
     {
       "id": 6,
       "name": "Banana",
-      "price": 1.05,
+      "price": 405,
       "imgUrl": "/imgs/bananas.png",
       "productQuant": "5 bunches",
       "category": "Dairy"
@@ -55,7 +55,7 @@
     {
       "id": 7,
       "name": "Sweet potatoes",
-      "price": 14000,
+      "price": 140,
       "imgUrl": "/imgs/potatoes.png",
       "productQuant": "1 Kg",
       "category": "Cereals"

@@ -28,7 +28,10 @@ export function Home() {
             Sokoni! Get Fresh Groceries from Farm
           </h1>
           <p>From farm to shop hassle free</p>
-          <p className="border w-100 align-self-center">some form</p>
+          {/* <p className="border w-100 align-self-center">some form</p> */}
+          <Button className="mt-4 mb-4 w-50  mx-auto fw-bold" variant="outline-secondary" href="market">
+                Shop now
+              </Button>{" "}
         </div>
       </div>
 
@@ -49,7 +52,7 @@ export function Home() {
               <p style={{ fontWeight: 300, fontSize: ".9rem" }}>
                 Shop 5000 worth of produce and get free delivery anywhere
               </p>
-              <Button className="mt-4 mb-4" variant="secondary">
+              <Button className="mt-4 mb-4" variant="secondary" href="/market">
                 Shop now
               </Button>{" "}
             </div>
@@ -61,12 +64,12 @@ export function Home() {
               <Badge pill bg="warning" text="light">
                 20% off
               </Badge>{" "}
-              <p className="fs-4 mt-1 mb-1">Shop and get cash back</p>
+              <p className="fs-4 mt-1 mb-1">Get 20% off</p>
               <p style={{ fontWeight: 300, fontSize: ".9rem" }}>
                 Shop 5000 worth of produce and get free delivery anywhere
               </p>
-              <Button className="mt-4 mb-4" variant="secondary">
-                Shop now
+              <Button className="mt-4 mb-4" variant="secondary" href="market">
+                Learn more
               </Button>{" "}
             </div>
           </Col>

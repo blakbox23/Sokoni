@@ -7,7 +7,7 @@ export function Footer() {
         style={{ backgroundColor: "#10140c" }}
         className="p-5 justify-content-around"
       >
-        <Col>
+        <Col style={{cursor: "pointer"}}>
           <p className="fw-bold text-light">Let's do it together</p>
           <p className="text-white-50">Careers</p>
           <p className="text-white-50">Soko yetu Partners</p>
@@ -15,7 +15,7 @@ export function Footer() {
           <p className="text-white-50">More</p>
         </Col>
 
-        <Col>
+        <Col style={{cursor: "pointer"}}>
           <p className="fw-bold text-light">Link our interest</p>
           <p className="text-white-50">About us</p>
           <p className="text-white-50">FAQ</p>
@@ -23,7 +23,7 @@ export function Footer() {
           <p className="text-white-50">Contact us</p>
         </Col>
 
-        <Col>
+        <Col style={{cursor: "pointer"}}>
           <p className="fw-bold text-light">Follow us</p>
           <p className="text-white-50">Instagram</p>
           <p className="text-white-50">Twitter</p>

@@ -13,7 +13,7 @@ export function Login() {
       }}
     >
       <div
-        className="d-flex w-50 border h-100"
+        className="w-50 border h-100 d-none d-sm-flex "
         style={{
           backgroundColor: "#87e387",
           backgroundImage: "url(../public/imgs/logins-removebg-preview.png)",
@@ -23,7 +23,7 @@ export function Login() {
         }}
       ></div>
 
-      <div className="d-flex w-50 p-4 flex-column justify-content-center align-items-center">
+      <div className="d-flex p-4 border flex-column justify-content-center align-items-center mobile">
         <h1 className="fs-4 fw-bold mb-3">Log in</h1>
         <form className="d-flex flex-column w-75">
           <label className="mb-2">
