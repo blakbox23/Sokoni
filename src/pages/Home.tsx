@@ -28,14 +28,12 @@ export function Home() {
             Sokoni! Get Fresh Groceries from Farm
           </h1>
           <p>From farm to shop hassle free</p>
-          {/* <p className="border w-100 align-self-center">some form</p> */}
           <Button className="mt-4 mb-4 w-50  mx-auto fw-bold" variant="outline-secondary" href="/market">
                 Shop now
             </Button>{" "}
         </div>
       </div>
 
-      {/* After Hero section */}
       <div
         style={{
           backgroundImage: "linear-gradient(white, #FAF0DC)",
