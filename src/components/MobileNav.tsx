@@ -42,10 +42,10 @@ function MobileNav() {
                     <Nav.Link to="/market" as={NavLink}>
                       Market
                     </Nav.Link>
-                    <Nav.Link to="/market" as={NavLink}>
+                    <Nav.Link to="/about-us" as={NavLink}>
                       About
                     </Nav.Link>
-                    <Nav.Link to="/market" as={NavLink}>
+                    <Nav.Link to="/contact-us" as={NavLink}>
                       Contact us
                     </Nav.Link>
 
