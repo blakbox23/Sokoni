@@ -25,6 +25,15 @@
   }
 
 }
+.market-banner {
+    height: "10rem",
+    backgroundImage: "url(../public/imgs/mktbanner2.jpg)",
+    objectFit: "cover",
+    backgroundPosition: "right",
+    width: "100%",
+    marginBottom: "2rem",
+
+}
 
 .mobile{
   width: 50%;

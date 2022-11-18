@@ -5,6 +5,7 @@ import { colors } from "../constants/colors";
 import { Footer } from "../components/Footer";
 import { useState } from "react";
 import MobileNav from "../components/MobileNav";
+import '../App.css'
 
 export function Market() {
   const [products, setProducts] = useState(storeItems);
@@ -34,15 +35,8 @@ export function Market() {
       >
 
         <div
-          className="d-flex align-items-center"
-          style={{
-            height: "10rem",
-            backgroundImage: "url(../public/imgs/mktbanner2.jpg)",
-            objectFit: "cover",
-            backgroundPosition: "right",
-            width: "100%",
-            marginBottom: "2rem",
-          }}
+          className="d-flex align-items-center market-banner"
+        
         >
           <p className="ms-5 text-white fs-3">Our Products</p>
         </div>
