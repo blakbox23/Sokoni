@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import  useUserContext from "./useUserContext";
 
-const useLoginUser = () => {
+
+const useLoginUser = (fieldInput: object) => {
     const {dispatch } = useUserContext();
 
   useEffect (() => {
