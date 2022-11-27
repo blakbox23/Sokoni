@@ -1,9 +1,23 @@
+import { useState } from "react";
+import { Dispatch } from "react";
 import { Button } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import "../App.css";
+import useLoginUser from "../contexts/usersContext/userHooks/useLoginUser"
+import useForm from "../hooks/useForm";
 
 export function Login() {
+
+  const { values, handleChange, handleSubmit } = useForm(login);
+
+
+  function login() {
+    console.log(values);
+  }
+
+
   return (
+    
     <div
       style={{
         fontFamily: "Quicksand, sans-serif",
@@ -19,7 +33,7 @@ export function Login() {
 
       <div className="d-flex p-4 border flex-column justify-content-center align-items-center mobile">
         <h1 className="fs-4 fw-bold mb-3">Log in</h1>
-        <form className="d-flex flex-column w-75">
+        <form onSubmit={handleSubmit} className="d-flex flex-column w-75">
           <label className="mb-2">
             <p className="mb-1">Email</p>
             <input
@@ -27,6 +41,9 @@ export function Login() {
               type="text"
               placeholder="Email"
               required
+              value={values.email}
+              name="email"
+              onChange={handleChange}
             />
           </label>
           <label className="mb-2">
@@ -36,10 +53,13 @@ export function Login() {
               type="password"
               placeholder="Password"
               required
+              value={values.password}
+              onChange={handleChange}
+              name="password"
             />
           </label>
 
-          <Button className="mt-3 mb-3" variant="secondary">
+          <Button type="submit" className="mt-3 mb-3" variant="secondary">
             Log in
           </Button>
 
