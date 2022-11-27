@@ -1,8 +1,12 @@
 import { Col, Row } from "react-bootstrap";
+import useProductsContext from "../contexts/productsContext/productsHooks/useProductsContext";
 
 export function Footer() {
+
+
   return (
     <>
+    
       <Row
         style={{ backgroundColor: "#10140c" }}
         className="p-5 justify-content-around"

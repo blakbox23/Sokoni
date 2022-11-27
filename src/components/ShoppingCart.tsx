@@ -1,5 +1,5 @@
 import { Offcanvas, Stack } from "react-bootstrap";
-import { useShoppingCart } from "../context/ShoppingCartContext";
+import { useShoppingCart } from "../contexts/ShoppingCartContext";
 import storeItems from "../data/items.json";
 import { CartItem } from "./CartItem";
 import { NavLink } from "react-router-dom";

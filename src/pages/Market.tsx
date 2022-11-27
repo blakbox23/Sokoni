@@ -6,20 +6,29 @@ import { Footer } from "../components/Footer";
 import { useState } from "react";
 import MobileNav from "../components/MobileNav";
 import '../App.css'
+import useProductsContext from "../contexts/productsContext/productsHooks/useProductsContext";
+import useFetchProducts from "../contexts/productsContext/productsHooks/useFetchProducts";
 
 export function Market() {
-  const [products, setProducts] = useState(storeItems);
+ 
+  const {state} = useProductsContext()
+  const grocery = state.products
+  // console.log(grocery)
+
+
+  const [products, setProducts] = useState(grocery);
   const [selected, setSelected] = useState("Select a category")
 
+
   const filterItem = (category: string) => {
-    const products = storeItems.filter((item) => item.category === category);
+    const products = grocery.filter((item) => item.category === category);
     setProducts(products);
     setSelected(category);
   };
 
   const unfiltered = () =>{
      setSelected("Select a category")
-     setProducts(storeItems)
+     setProducts(grocery)
 
     }
 

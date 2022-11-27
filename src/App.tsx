@@ -2,15 +2,18 @@ import { Routes, Route } from "react-router-dom";
 import { Home } from "./pages/Home";
 import { Market } from "./pages/Market";
 import { Navbar } from "./components/Navbar";
-import { ShoppingCartProvider } from "./context/ShoppingCartContext";
+import { ShoppingCartProvider } from "./contexts/ShoppingCartContext";
 import MobileNav from "./components/MobileNav";
 import { Login } from "./pages/Login";
 import { Signup } from "./pages/Signup"
 import { Checkout } from "./pages/Checkout";
 import { About } from "./pages/About";
 import { Contact } from "./pages/Contact";
+import useFetchProducts from "./contexts/productsContext/productsHooks/useFetchProducts";
 
 function App() {
+  useFetchProducts()
+
   return (
     <ShoppingCartProvider>
         {/* <Navbar /> */}
