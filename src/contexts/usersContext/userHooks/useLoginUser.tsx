@@ -1,9 +1,10 @@
-import { useEffect } from "react";
+import { useEffect, Dispatch } from "react";
 import  useUserContext from "./useUserContext";
 
 
 const useLoginUser = (fieldInput: object) => {
     const {dispatch } = useUserContext();
+
 
   useEffect (() => {
     fetch('http://localhost:3000/api/v1/users/login',{
@@ -24,7 +25,7 @@ const useLoginUser = (fieldInput: object) => {
         })
     })
   }, [])
-  
+
 }
 
 export default useLoginUser

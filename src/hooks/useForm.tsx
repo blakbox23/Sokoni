@@ -1,13 +1,13 @@
 import { useState } from "react";
-import useLoginUser from "../contexts/usersContext/userHooks/useLoginUser";
+// import useLoginUser from "../contexts/usersContext/userHooks/useLoginUser";
 
 const useForm = (callback: any) => {
   const [values, setValues] = useState({ email: "", password: "" });
-  useLoginUser(values);
 
   const handleSubmit = (event: any) => {
     event.preventDefault();
     callback();
+
   };
 
   const handleChange = (event: any) => {
