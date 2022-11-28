@@ -14,6 +14,10 @@ export function Login() {
 
 
   function login() {
+
+    let token = "";
+    let user
+
     fetch('http://localhost:3000/api/v1/users/login',{
       method: 'POST',
       body: JSON.stringify(values),
@@ -25,14 +29,17 @@ export function Login() {
     })
     .then((res) => res.json())
     .then((res)=> {
-      console.log(res)
+      token=res.auth_token
+      // user=res.user
+      // console.log(user)
         dispatch({
             type: 'login',
             payload: res
         })
-    })
 
-    // navigate('/')
+        token?navigate('/') : null
+
+    })
 
   }
 

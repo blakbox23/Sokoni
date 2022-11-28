@@ -8,9 +8,15 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import { NavLink } from "react-router-dom";
 import { useShoppingCart } from "../contexts/ShoppingCartContext";
 import "../App.css";
+import useUserContext from "../contexts/usersContext/userHooks/useUserContext";
 
 function MobileNav() {
   const { openCart, cartQuantity } = useShoppingCart();
+  const userContext = useUserContext()
+  // console.log('email')
+  // console.log(userContext.state.user.email)
+  const email = userContext.state.user.email
+
 
   return (
     <>
@@ -59,13 +65,13 @@ function MobileNav() {
               </Offcanvas.Body>
             </Navbar.Offcanvas>
 
-            <NavLink
+            {email?<div className="me-3">{email}</div> : <NavLink
               className={"d-none d-sm-block p-2"}
               style={{ marginRight: "1rem", textDecoration: "none", fontFamily: "Quicksand, sans-serif" }}
               to="/login"
             >
               Login
-            </NavLink>
+            </NavLink>}
 
             <Button
               onClick={openCart}

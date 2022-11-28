@@ -2,13 +2,20 @@ import { createContext } from "react";
 import { UserContextType } from "./UserProvider";
 
 export type UserStateType = {
-  id: number;
-  email: string;
+  auth_token: string;
+  user: {
+    id: number;
+    email: string;
+  };
 };
 
 export const initialState: UserStateType = {
-  id: 0,
-  email: "",
+  auth_token: "",
+  user: {
+    id: 0,
+    email: "",
+
+  }
 };
 
 const UserContext = createContext<UserContextType>({
