@@ -6,7 +6,7 @@ type UserProviderProps = {
 };
 
 export type UserActionType = {
-  type: "login";
+  type: "login" | "logout";
   payload: any;
 };
 
@@ -19,7 +19,11 @@ function userContextReducer(state: UserStateType, action: UserActionType): UserS
   switch (action.type) {
     case "login":
         console.log('on reducer')
-      return action.payload;
+      return {...action.payload, loggedIn: true}
+
+      case "logout":
+        console.log('on reducer')
+      return {...state, loggedIn: false}
 
     default:
         console.log('not on reducer')

@@ -9,14 +9,18 @@ import { NavLink } from "react-router-dom";
 import { useShoppingCart } from "../contexts/ShoppingCartContext";
 import "../App.css";
 import useUserContext from "../contexts/usersContext/userHooks/useUserContext";
+import UserDropdown from "./UserDropdown";
 
 function MobileNav() {
   const { openCart, cartQuantity } = useShoppingCart();
-  const userContext = useUserContext()
+  const userContext = useUserContext();
   // console.log('email')
-  // console.log(userContext.state.user.email)
-  const email = userContext.state.user.email
+    const email = userContext.state.user.email;
+    const loggedIn = userContext.state.loggedIn;
 
+    console.log(userContext.state)
+
+  
 
   return (
     <>
@@ -55,23 +59,36 @@ function MobileNav() {
                       Contact us
                     </Nav.Link>
 
-                    <Nav.Link className={"d-md-none d-sm-none"} to="/login" as={NavLink}>
+                    <Nav.Link
+                      className={"d-md-none d-sm-none"}
+                      to="/login"
+                      as={NavLink}
+                    >
                       Login
                     </Nav.Link>
-
-
                   </Nav>
                 </div>
               </Offcanvas.Body>
             </Navbar.Offcanvas>
 
-            {email?<div className="me-3">{email}</div> : <NavLink
-              className={"d-none d-sm-block p-2"}
-              style={{ marginRight: "1rem", textDecoration: "none", fontFamily: "Quicksand, sans-serif" }}
-              to="/login"
-            >
-              Login
-            </NavLink>}
+
+            {loggedIn == true ? (
+               <UserDropdown email={email} />
+            ) : (
+              <NavLink
+                className={"d-none d-sm-block p-2"}
+                style={{
+                  marginRight: "1rem",
+                  textDecoration: "none",
+                  fontFamily: "Quicksand, sans-serif",
+                }}
+                to="/login"
+              >
+                Login
+              </NavLink>
+            )}
+
+           
 
             <Button
               onClick={openCart}

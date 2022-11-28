@@ -7,6 +7,7 @@ export type UserStateType = {
     id: number;
     email: string;
   };
+  loggedIn: boolean;
 };
 
 export const initialState: UserStateType = {
@@ -14,8 +15,8 @@ export const initialState: UserStateType = {
   user: {
     id: 0,
     email: "",
-
-  }
+  },
+  loggedIn: false
 };
 
 const UserContext = createContext<UserContextType>({
