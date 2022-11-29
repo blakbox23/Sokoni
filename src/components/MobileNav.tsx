@@ -14,13 +14,8 @@ import UserDropdown from "./UserDropdown";
 function MobileNav() {
   const { openCart, cartQuantity } = useShoppingCart();
   const userContext = useUserContext();
-  // console.log('email')
-    const email = userContext.state.user.email;
+    const username = userContext.state.user.username;
     const loggedIn = userContext.state.loggedIn;
-
-    console.log(userContext.state)
-
-  
 
   return (
     <>
@@ -73,7 +68,7 @@ function MobileNav() {
 
 
             {loggedIn == true ? (
-               <UserDropdown email={email} />
+               <UserDropdown username={username} />
             ) : (
               <NavLink
                 className={"d-none d-sm-block p-2"}

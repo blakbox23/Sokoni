@@ -5,12 +5,26 @@ import { Navigate, NavLink, useNavigate } from "react-router-dom";
 import "../App.css";
 import useLoginUser from "../contexts/usersContext/userHooks/useLoginUser";
 import useUserContext from "../contexts/usersContext/userHooks/useUserContext";
+import { ToastContainer, toast } from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 import useForm from "../hooks/useForm";
 
 export function Login() {
   const { values, handleChange, handleSubmit } = useForm(login);
   const {dispatch } = useUserContext();
   const navigate = useNavigate()
+
+  const error = (msg: string) =>
+  toast.error(msg, {
+    position: "top-right",
+    autoClose: 5000,
+    hideProgressBar: false,
+    closeOnClick: true,
+    pauseOnHover: true,
+    draggable: true,
+    progress: undefined,
+    theme: "colored",
+  });
 
 
   function login() {
@@ -30,8 +44,13 @@ export function Login() {
     .then((res) => res.json())
     .then((res)=> {
       token=res.auth_token
-      // user=res.user
-      // console.log(user)
+      console.log('res')
+      console.log(res.error)
+
+      if(res.error){
+        error(res.error)
+      }
+
         dispatch({
             type: 'login',
             payload: res
@@ -44,6 +63,19 @@ export function Login() {
   }
 
   return (
+    <>
+         <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="colored"
+      />
     <div
       style={{
         fontFamily: "Quicksand, sans-serif",
@@ -117,5 +149,6 @@ export function Login() {
         </form>
       </div>
     </div>
+    </>
   );
 }

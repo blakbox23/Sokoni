@@ -1,11 +1,11 @@
 import Dropdown from 'react-bootstrap/Dropdown';
 import useUserContext from '../contexts/usersContext/userHooks/useUserContext';
 
-type email ={
-    email: string
+type username ={
+    username: string
 }
 
-function UserDropdown({ email }: email) {
+function UserDropdown({ username }: username) {
   
   const {dispatch } = useUserContext();
 
@@ -21,7 +21,7 @@ function UserDropdown({ email }: email) {
   return (
     <Dropdown className = "me-3" >
       <Dropdown.Toggle variant="outline" id="dropdown-basic">
-        {email}
+        {username}
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
