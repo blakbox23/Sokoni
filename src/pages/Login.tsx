@@ -93,7 +93,7 @@ export function Login() {
             <p className="mb-1">Email</p>
             <input
               className="p-2 ps-3 w-100 inpt"
-              type="text"
+              type="email"
               placeholder="Email"
               required
               value={values.email}

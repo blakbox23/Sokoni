@@ -121,7 +121,7 @@ export function Signup() {
               <p className="mb-1">Email</p>
               <input
                 className="p-2 ps-3 w-100 inpt"
-                type="text"
+                type="email"
                 placeholder="Email"
                 onChange={handlesignChange}
                 value={signvalues.email}

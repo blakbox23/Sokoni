@@ -6,6 +6,7 @@ export type UserStateType = {
   user: {
     id: number;
     email: string;
+    username: string;
   };
   loggedIn: boolean;
   status: string;
@@ -16,6 +17,7 @@ export const initialState: UserStateType = {
   user: {
     id: 0,
     email: "",
+    username: ""
   },
   loggedIn: false,
   status: ""
