@@ -16,9 +16,6 @@ export function Market() {
   const [products, setProducts] = useState(grocery);
   const [selected, setSelected] = useState("Select a category");
 
-  console.log("products");
-  console.log(products);
-
   const filterItem = (category: string) => {
     const products = grocery.filter((item) => item.category === category);
     setProducts(products);
