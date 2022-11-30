@@ -44,7 +44,7 @@ export function Signup() {
       },
     };
 
-    fetch("http://localhost:3000/api/v1/users/", {
+    fetch("https://sokoni.onrender.com/api/v1/users/", {
       method: "POST",
       body: JSON.stringify(userSignupObject),
 

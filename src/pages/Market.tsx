@@ -13,6 +13,8 @@ export function Market() {
   const { state } = useProductsContext();
   const grocery = state.products;
 
+  console.log(grocery)
+
   const [products, setProducts] = useState(grocery);
   const [selected, setSelected] = useState("Select a category");
 
