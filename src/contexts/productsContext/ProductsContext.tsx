@@ -2,10 +2,10 @@ import { createContext } from "react";
 import { ProductsContextType } from "./ProductsProvider";
 
 export type ProductType = {
-    id: string
+    id: number
     name: string
     price: number
-    quantity: string
+    productQuant: string
     imgUrl: string
     category: string
     updated_at: string

@@ -17,7 +17,7 @@ type ShoppingCartProviderProps = {
 };
 
 type CartItem = {
-  id: number;
+  id: any;
   quantity: number;
 };
 

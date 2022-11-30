@@ -8,6 +8,8 @@ type StoreItemProps = {
   imgUrl: string;
   productQuant: string;
   category?: string;
+  created_at?: string;
+  updated_at?: string;
 };
 
 export function StoreItem({ id, name, price, imgUrl, productQuant, category }: StoreItemProps) {
