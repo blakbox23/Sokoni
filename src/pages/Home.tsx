@@ -27,7 +27,7 @@ export function Home() {
               Sokoni! Get Fresh Groceries from Farm
             </h1>
             <p>From farm to shop hassle free</p>
-            {/* <NavLink to="/market">
+            <NavLink to="/market">
               <Button
                 className="mt-4 mb-4 w-50  mx-auto fw-bold"
                 variant="outline-secondary"
@@ -35,7 +35,7 @@ export function Home() {
               >
                 Shop now
               </Button>{" "}
-            </NavLink> */}
+            </NavLink>
           </div>
         </div>
 
@@ -64,11 +64,11 @@ export function Home() {
                 <p style={{ fontWeight: 300, fontSize: ".9rem" }}>
                   Shop 5000 worth of produce and get free delivery anywhere
                 </p>
-                {/* <NavLink to="/market">
+                <NavLink to="/market">
                   <Button className="mt-4 mb-4" variant="secondary">
                     Shop now
                   </Button>{" "}
-                </NavLink> */}
+                </NavLink>
               </div>
             </Col>
 
@@ -90,11 +90,11 @@ export function Home() {
                 <p style={{ fontWeight: 300, fontSize: ".9rem" }}>
                   Shop 5000 worth of produce and get free delivery anywhere
                 </p>
-                {/* <NavLink to="/market">
+                <NavLink to="/market">
                   <Button className="mt-4 mb-4" variant="secondary">
                     Shop now
                   </Button>{" "}
-                </NavLink> */}
+                </NavLink>
               </div>
             </Col>
           </Row>
