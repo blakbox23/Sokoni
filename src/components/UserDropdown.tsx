@@ -25,8 +25,7 @@ function UserDropdown({ username }: username) {
       </Dropdown.Toggle>
 
       <Dropdown.Menu>
-        <Dropdown.Item href="#/action-2">Edit profile</Dropdown.Item>
-        {/* <Dropdown.Item href="#/action-3">Something else</Dropdown.Item> */}
+        <Dropdown.Item href="/">Edit profile</Dropdown.Item>
         <Dropdown.Item onClick={()=>logout()}>Log out</Dropdown.Item>
 
       </Dropdown.Menu>
