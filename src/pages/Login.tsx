@@ -44,8 +44,6 @@ export function Login() {
     .then((res) => res.json())
     .then((res)=> {
       token=res.auth_token
-      console.log('res')
-      console.log(res.error)
 
       if(res.error){
         error(res.error)

@@ -1,6 +1,5 @@
 import { Button, Stack } from "react-bootstrap"
 import { useShoppingCart } from "../contexts/ShoppingCartContext"
-// import storeItems from "../data/items.json"
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import { formatCurrency } from "../utilities/formatCurrency";
 import useProductsContext from "../contexts/productsContext/productsHooks/useProductsContext";
@@ -30,9 +29,7 @@ return (
         <div>
           {item.name}{" "}
           {quantity > 1 && (
-            // <span className="text-muted" style={{ fontSize: ".75rem" }}>
-            //   x{quantity}
-            // </span>
+       
             <div>{quantity} units</div>
           )}
         </div>

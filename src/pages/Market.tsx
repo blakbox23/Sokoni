@@ -1,6 +1,5 @@
 import { Button, ButtonGroup, Col, Dropdown, Row } from "react-bootstrap";
 import { StoreItem } from "../components/StoreItem";
-import storeItems from "../data/items.json";
 import { colors } from "../constants/colors";
 import { Footer } from "../components/Footer";
 import { useState } from "react";

@@ -1,6 +1,5 @@
 import { Offcanvas, Stack } from "react-bootstrap";
 import { useShoppingCart } from "../contexts/ShoppingCartContext";
-// import storeItems from "../data/items.json";
 import { CartItem } from "./CartItem";
 import { NavLink } from "react-router-dom";
 import { Checkout } from "../pages/Checkout";
@@ -10,7 +9,6 @@ import useProductsContext from "../contexts/productsContext/productsHooks/usePro
 type ShoppingCartProps = {
   isOpen: boolean;
 };
-
 
 
 export function ShoppingCart({ isOpen }: ShoppingCartProps) {
