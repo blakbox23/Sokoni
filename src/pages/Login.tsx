@@ -30,7 +30,6 @@ export function Login() {
   function login() {
 
     let token = "";
-    let user
 
     fetch('https://sokoni.onrender.com/api/v1/users/login',{
       method: 'POST',

@@ -62,12 +62,8 @@ export function Signup() {
           res.errors.forEach((err: string)=>error(err))
         } else {
          
-          // navigate('/login')
           success('Account created successfully')  
-
-          setTimeout(()=>{
-            success('Proceed to log in')
-        }, 2000);
+          success('Proceed to log in')
 
           dispatch({
             type: "signup",
