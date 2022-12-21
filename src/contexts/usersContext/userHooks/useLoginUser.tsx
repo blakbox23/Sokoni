@@ -7,7 +7,7 @@ const useLoginUser = (fieldInput: object) => {
 
 
   useEffect (() => {
-    fetch('http://localhost:3000/api/v1/users/login',{
+    fetch('https://sokoni-backend.onrender.com/api/v1/users/login',{
       method: 'POST',
       body: JSON.stringify(fieldInput),
 

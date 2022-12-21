@@ -5,7 +5,7 @@ const useFetchProducts = () => {
   const {dispatch } = useProductsContext();
 
   useEffect (() => {
-    fetch('https://sokoni.onrender.com/api/v1/products/')
+    fetch('https://sokoni-backend.onrender.com/api/v1/products/')
     .then((res) => res.json())
     .then((res)=> {
         dispatch({
